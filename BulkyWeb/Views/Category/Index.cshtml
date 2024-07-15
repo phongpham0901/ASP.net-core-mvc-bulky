@@ -17,19 +17,22 @@
 
 <table class="table table-bordered table-striped">
     <thead>
-    <tr>
+        <tr class="table-light">
         <th>
             Category Name 
         </th>
         <th>
             Display Order
         </th>
+        <th>
+                
+        </th>
     </tr>
     </thead>
     <tbody>
         @foreach(var obj in Model.OrderBy(u=>u.DisplayOrder))
         {
-            <tr>
+            <tr class="table-light">
                 <td>@obj.Name</td>
                 <td>@obj.DisplayOrder</td>
                 <td>
